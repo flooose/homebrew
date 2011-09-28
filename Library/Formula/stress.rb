@@ -6,9 +6,7 @@ class Stress < Formula
   md5 'a607afa695a511765b40993a64c6e2f4'
 
   def install
-    system "./configure", "--disable-debug", "--disable-dependency-tracking",
-                          "--prefix=#{prefix}"
-
+    system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make install"
   end
 end
